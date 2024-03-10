@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e15e3a9fba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" id="logout">Logout</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hello, I'm <span>Cristopher Jaden</span><br>Ceruelos From Philippines</h1>
+        </div>     
+    </div>
+</div>
+<!-----------about-------------->
+  <div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="avatar.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"Hello, I am Cristopher Jaden Ceruelos, a dedicated second-year college student pursuing excellence <br> in the realm of web design. As an aspiring web designer, I am passionate about crafting  <br> visually appealing and functional digital experiences. <br> Currently  I am committed to honing my skills and staying abreast of the latest <br> industry trends. With a relentless pursuit of creativity and innovation, I am determined <br> to make a meaningful impact in the dynamic world of web design.</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/Ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>2021 - Current</span><br>2nd Year college student at NU Fairview</li>
+                            <li><span>2019 - 2021</span><br>Game Development</li>
+                            <li><span>Current</span><br>Web Developer and Designer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College</span><br>BSIT-MI Student at NU Fairview</li>
+                            <li><span>Senior-Highschool</span><br>Stem Student at St. Joseph College of Novaliches</li>
+                            <li><span>Junior-Highschool</span><br>Graduated top of the class at St. Joseph College of Novaliches</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </div>  
+</div>
+<!----------------------services-------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designer</h2>
+                <p>“web designer is responsible for creating the visual and interactive elements of websites. Their primary focus is on the look and feel of the site, as well as its usability and functionality.”</p>
+                <a href="https://brainstation.io/career-guides/what-is-a-web-designer#:~:text=Web%20Designers%20plan%2C%20ideate%2C%20create,website%20or%20updating%20existing%20pages.">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Game Designer</h2>
+                <p>“Game designers are responsible for conceptualizing, planning, and implementing the overall design and gameplay mechanics of a video game.”</p>
+                <a href="https://www.computerscience.org/careers/video-game-designer/#:~:text=Video%20game%20designers%20create%20the,including%20technical%20and%20creative%20personnel.">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Designer</h2>
+                <p>“Designing an app involves creating the user interface (UI) and user experience (UX) for a software application intended to run on mobile devices, tablets, or desktop computers.”</p>
+                <a href="https://www.ibm.com/docs/en/zos-basic-skills?topic=zos-application-designers-programmers">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Social media encompasses online platforms 
+                        enabling users to share content and connect globally.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.jpg">
+                <div class="layer">
+                    <h3>Game App</h3>
+                    <p>Social media encompasses online platforms 
+                        enabling users to share content and connect globally.</p>
+                        <a href="https://poki.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Social media encompasses online platforms 
+                        enabling users to share content and connect globally.</p>
+                        <a href="https://music-player-audio-player.en.uptodown.com/android"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            </div>
+            <a href="#"class="btn">See More</a>
+        </div>
+    </div>
+</div>
+
+<!---------HOBIES----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobby-list">
+            <!-- Example Hobby #1 -->
+            <div class="hobby">
+                <img src="hobby-1.jpg" alt="Hobby Image Description">
+                <div class="layer">
+                    <h3>Sleeping</h3>
+                    <p>I like sleeping 7-8 hours.</p>
+                    <a href="YourLinkHere"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Example Hobby #2 -->
+            <div class="hobby">
+                <img src="hobby-2.jpg" alt="Hobby Image Description">
+                <div class="layer">
+                    <h3>Eating</h3>
+                    <p>Eating is one of my hobby I like to go place to place just to find new and exciting foods to eat.</p>
+                    <a href="YourLinkHere"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="hobby-3.jpg" alt="Hobby Image Description">
+                <div class="layer">
+                    <h3>Gaming</h3>
+                    <p>Gaming is one of my stress reliever, when i'm doing nothing I like to play whole day .</p>
+                    <a href="YourLinkHere"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Add more hobbies as needed -->
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!--------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> cerueloscj@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 09610887762</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/christopherjaden.ceruelos?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cj_ceruelos_542/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/cristopher-jaden-ceruelos-4aa859252/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> copyright © Ceruelos. Made by <i class="fa-solid fa-heart"></i> cerueloscj@gmail.com</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var logoutButton = document.getElementById('logout');
+    if (logoutButton) {
+        logoutButton.addEventListener('click', function() {
+            // Optional: Clear user data from localStorage
+            localStorage.removeItem('user');
+        
+            // Redirect to login.php
+            window.location.href = 'login.html';
+        });
+    }
+});
+</script>
+    
+
+</body>
+</html>

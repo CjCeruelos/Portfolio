@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808; /* Dark background */
+    color: #ff0000da; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+    .container {
+    width: 100%;
+    max-width: 400px; /* Adjust width as necessary */
+    background: #262626; /* Dark shade for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for 3D effect */
+    color: #FFF; /* Text color */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"], input[type="password"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #080808; /* Input background */
+    border: 1px solid #ff004f; /* Border color */
+    border-radius: 5px;
+    color: #FFF; /* Input text color */
+}
+
+button {
+    background: #ff004f; /* Button background */
+    color: #FFF; /* Button text color */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px; /* Space between buttons and link */
+}
+
+button:hover {
+    opacity: 0.9; /* Button hover effect */
+}
+
+a {
+    color: #ff004f; /* Link color */
+    text-decoration: none;
+    text-align: center;
+    display: block; /* Ensure it's a block to center text */
+}
+
+/* Additional responsiveness and styling adjustments as needed */

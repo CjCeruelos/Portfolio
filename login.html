@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css"> <!-- Ensure this file contains your CSS -->
+    <script>
+        function loginUser() {
+            // Replace 'dashboard.html' with the page you want to redirect after login
+            window.location.href = 'index.html';
+            // Prevent form submission
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo" style="width: 350px; margin-bottom: 20px;">
+        <form class="login-form" onsubmit="return loginUser()">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <button type="submit" name="login">Login</button>
+            <button type="button" onclick="window.location.href='register.html';">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

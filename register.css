@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: #080808;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-dark {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #262626;
+}
+
+.form-section p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card {
+    background: none; /* To match the dark theme */
+    border: none; /* Remove card border */
+}
+
+.card-body {
+    color: #FFF; /* Ensure text is white for visibility */
+}
+
+.form-group label {
+    color: #FFF; /* Labels should be clearly visible */
+}
+
+.form-control {
+    background-color: #333;
+    border: 1px solid #ff004f;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.form-control:focus {
+    border-color: #ff004f;
+    box-shadow: none;
+}
+
+/* Styling for the dropdown */
+select.form-control {
+    appearance: none; /* Remove default browser dropdown style */
+    -webkit-appearance: none; /* For Safari */
+}
+
+/* Placeholder color */
+::placeholder {
+    color: #ddd; /* Lighter placeholder text for better visibility */
+}
+
+.btn-primary {
+    background-color: #ff004f;
+    border-color: #ff004f;
+}
+
+.btn-primary:hover {
+    background-color: darken(#ff004f, 10%);
+}
+
+.btn-link {
+    color: #ff004f; /* Styling for the 'already have an account?' link */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-row > div, .btn-block {
+        width: 100%;
+        max-width: none; /* Ensure inputs and buttons span the full width on smaller screens */
+    }
+
+    .form-group {
+        margin-bottom: 15px; /* Add more space between form groups */
+    }
+}
+
+/* Further adjust for very small devices */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px; /* Reduce padding to utilize more screen space */
+    }
+}
